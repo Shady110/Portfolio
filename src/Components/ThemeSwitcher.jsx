@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const ThemeSwitcher = () => {
   // Set initial theme state
-  const [theme, setTheme] = useState("corporate");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     // Apply theme on initial load or theme change
