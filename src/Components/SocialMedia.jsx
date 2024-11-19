@@ -3,7 +3,7 @@ function SocialMedia({ icon, link }) {
     <>
       <a href={link} className="">
         <button className=" btn btn-outline rounded-xl  w-full h-full">
-          <i class={icon}></i>
+          {icon}
         </button>
       </a>
     </>

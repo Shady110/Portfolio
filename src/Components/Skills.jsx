@@ -14,6 +14,7 @@ import Github from "../assets/github-icon-1.svg";
 import Figma from "../assets/figma-icon (1).svg";
 import Postman from "../assets/postman-icon-svgrepo-com.svg";
 import TextBox from "./TextBox";
+import ProgressBar from "./ProgressBar";
 function Skills() {
   return (
     <>
@@ -25,7 +26,7 @@ function Skills() {
                 "M397-95H211q-46.45 0-81.23-34.77Q95-164.55 95-211v-181q32-2 50.5-27.5T164-477q0-32-18.5-57.5T95-562v-181q0-47.45 34.77-81.72Q164.55-859 211-859h136q11-49 47.27-79 36.28-30 82.5-30 46.23 0 82.73 29.84Q596-908.32 607-859h136q47.45 0 81.72 34.28Q859-790.45 859-743v136q49 11 79 47.27 30 36.28 30 82.5 0 46.23-29.84 82.73Q908.32-358 859-347v136q0 46.45-34.28 81.23Q790.45-95 743-95H557q1-38-22.63-64.5T477.12-186q-33.62 0-57.37 26.62Q396-132.75 397-95Z"
               }
             />{" "}
-            Technical Skills
+            Skills
           </>
         }
       />
@@ -67,6 +68,14 @@ function Skills() {
           <TextBox concept={"Authentication & Authorization"}/>
           <TextBox concept={"CRUD Operations"}/>
           <TextBox concept={"Deployment"}/>
+        </div>
+      </div>
+      <div className="w-full p-5">
+        <h2 className="text-4xl font-semibold py-5 uppercase">Languages</h2>
+        <div className="flex flex-col justify-start gap-3 md:w-3/4 xs:w-full">
+          <ProgressBar title={'Arabic'} value={99}/>
+          <ProgressBar title={'English'} value={80}/>
+          <ProgressBar title={'German'} value={15}/>
         </div>
       </div>
     </>
