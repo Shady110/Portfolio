@@ -4,11 +4,11 @@ import ThemeSwitcher from "../Components/ThemeSwitcher";
 function SideBar() {
   return (
     <>
-      <section className=" flex xs:flex-row lg:flex-col justify-center items-center xs:gap-2 md:gap-4 w-1/2 mx-auto h-full">
-        <div className="flex justify-center items-center bg-white dark:glass p-2 rounded-full shadow-2xl">
+      <section className="flex xs:flex-row lg:flex-col justify-center items-center xs:gap-3  md:gap-4 ">
+        <div className="flex justify-center items-center bg-base-200 xs:max-w-12 md:max-w-16  p-2 rounded-full shadow-2xl">
           <ThemeSwitcher />
         </div>
-        <div className="flex xs:flex-row  lg:flex-col justify-center items-center gap-3 bg-white dark:glass p-2 rounded-full shadow-2xl">
+        <div className="flex xs:flex-row  lg:flex-col justify-center items-center gap-3 bg-base-200 p-2 rounded-full shadow-2xl">
           {/* Profile */}
           <SideBarButton
             section={"#profile"}
@@ -27,14 +27,16 @@ function SideBar() {
           />
           {/* Resume */}
           <SideBarButton
-            section={"#Work_Experience"}
-            help={"Work Experience"}
+            section={"#Resume"}
+            help={"Resume"}
             path={
-"M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm120-160h200q17 0 28.5-11.5T560-320q0-17-11.5-28.5T520-360H320q-17 0-28.5 11.5T280-320q0 17 11.5 28.5T320-280Zm0-160h320q17 0 28.5-11.5T680-480q0-17-11.5-28.5T640-520H320q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0-160h320q17 0 28.5-11.5T680-640q0-17-11.5-28.5T640-680H320q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Z"            }
+              "M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm120-160h200q17 0 28.5-11.5T560-320q0-17-11.5-28.5T520-360H320q-17 0-28.5 11.5T280-320q0 17 11.5 28.5T320-280Zm0-160h320q17 0 28.5-11.5T680-480q0-17-11.5-28.5T640-520H320q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0-160h320q17 0 28.5-11.5T680-640q0-17-11.5-28.5T640-680H320q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Z"
+            }
           />
 
           {/* Projects */}
           <SideBarButton
+            section={"#projects"}
             help={"Projects"}
             path={
               "M178-98q-53.82 0-90.91-37.09Q50-172.18 50-226v-391q0-53.83 37.09-90.91Q124.18-745 178-745h116v-72.21q0-53.92 37.11-90.85Q368.23-945 422.09-945h116.17q53.87 0 90.8 37.09Q666-870.83 666-817v72h116q53.83 0 90.91 37.09Q910-670.83 910-617v391q0 53.82-37.09 90.91Q835.83-98 782-98H178Zm244-647h116v-72H422v72Z"
@@ -42,6 +44,7 @@ function SideBar() {
           />
           {/* Contact */}
           <SideBarButton
+            section={"#contacts"}
             help={"Contact"}
             path={
               "M175-161q-34 15-64-5.5T81-223v-148l375-111L81-592v-147q0-36 30-56.5t64-6.5l607 258q41 18 41 63t-41 62L175-161Z"

@@ -3,7 +3,7 @@ import ScrollableText from "./ScrollableText";
 function Bio() {
   return (
     <>
-      <div className="flex flex-col items-start gap-5">
+      <div className="flex flex-col items-start gap-5 w-full">
         <ScrollableText/>
         <h2 className="lg:text-6xl xs:text-4xl font-semibold">
           Front-end developer creating intuitive interfaces and seamless web
@@ -14,9 +14,10 @@ function Bio() {
           full-stack solutions. Strong technical expertise paired with effective
           teamwork and teaching skills.
         </p>
-        <div className="flex items-center gap-24">
+        <div className="grid grid-cols-2 gap-4 w-full">
+
           <Stats
-            number={"10+"}
+            number={"7+"}
             text={
               <>
                 completed

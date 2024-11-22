@@ -13,8 +13,8 @@ import Profile from "./Sections/Profile";
 function App() {
   return (
     <>
-      <section className="lg:h-screen md:p-16 xs:p-3 flex xs:flex-col lg:flex-row justify-center items-start gap-2 ">
-        <div className="xs:w-full lg:w-1/12">
+      <section className="lg:h-screen md:p-16 xs:p-5 flex xs:flex-col lg:flex-row justify-center gap-5 ">
+        <div className="xs:w-full mx-auto lg:w-1/12">
           <SideBar />
         </div>
         <div className="xs:w-full xs:h-96 lg:h-full lg:w-4/12 bg-base-200 shadow-xl rounded-xl">

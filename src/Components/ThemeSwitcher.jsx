@@ -14,11 +14,11 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <button onClick={toggleTheme}>
+    <button onClick={toggleTheme} className="">
       {/* this hidden checkbox controls the state */}
       {theme == "corporate" ? (
         <svg
-          className="swap-on h-10 w-10 fill-current"
+          className="swap-on aspect-square w-full fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
         </svg>
       ) : (
         <svg
-          className="swap-off h-10 w-10 fill-current dark:text-white"
+          className="swap-off w-full fill-current dark:text-white"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >

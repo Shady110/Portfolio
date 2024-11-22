@@ -30,54 +30,57 @@ function Skills() {
           </>
         }
       />
-
-      <div className="w-full p-5">
-        <h2 className="text-4xl font-semibold py-5 uppercase">Technologies</h2>
-        <div className="grid lg:grid-cols-4 xs:grid-cols-2 gap-3">
-          <ToolBox image={HTML} title={"HTML"} />
-          <ToolBox image={CSS} title={"CSS"} />
-          <ToolBox image={Javascript} title={"JavaScript"} />
-          <ToolBox image={Bootstrap} title={"Bootstrap"} />
-          <ToolBox image={Tailwind} title={"Tailwind"} />
-          <ToolBox image={React} title={"React.JS"} />
-          <ToolBox image={Laravel} title={"Laravel"} />
-          <ToolBox image={Mysql} title={"MySQL"} />
+      <section className="flex flex-col gap-10 pt-10">
+        <div className="w-full">
+          <h2 className="text-4xl font-semibold py-5 uppercase">
+            Technologies
+          </h2>
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 gap-3">
+            <ToolBox image={HTML} title={"HTML"} />
+            <ToolBox image={CSS} title={"CSS"} />
+            <ToolBox image={Javascript} title={"JavaScript"} />
+            <ToolBox image={Bootstrap} title={"Bootstrap"} />
+            <ToolBox image={Tailwind} title={"Tailwind"} />
+            <ToolBox image={React} title={"React.JS"} />
+            <ToolBox image={Laravel} title={"Laravel"} />
+            <ToolBox image={Mysql} title={"MySQL"} />
+          </div>
         </div>
-      </div>
-      <div className="w-full p-5">
-        <h2 className="text-4xl font-semibold py-5 uppercase">Tools</h2>
-        <div className="grid lg:grid-cols-4 xs:grid-cols-2 gap-3">
-          <ToolBox image={Git} title={"Git"} />
-          <ToolBox image={Github} title={"GitHib"} />
-          <ToolBox image={Figma} title={"Figma"} />
-          <ToolBox image={Postman} title={"Postman"} />
+        <div className="w-full">
+          <h2 className="text-4xl font-semibold py-5 uppercase">Tools</h2>
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 gap-3">
+            <ToolBox image={Git} title={"Git"} />
+            <ToolBox image={Github} title={"GitHib"} />
+            <ToolBox image={Figma} title={"Figma"} />
+            <ToolBox image={Postman} title={"Postman"} />
+          </div>
         </div>
-      </div>
-      <div className="w-full p-5">
-        <h2 className="text-4xl font-semibold py-5 uppercase">Concepts</h2>
-        <div className="flex flex-wrap justify-start gap-3">
-          <TextBox concept={"Responsive Web Design"}/>
-          <TextBox concept={"Component-Based Architecture"}/>
-          <TextBox concept={"State Management"}/>
-          <TextBox concept={"DOM Manipulation"}/>
-          <TextBox concept={"API Integration"}/>
-          <TextBox concept={"UI/UX Principles"}/>
-          <TextBox concept={"Server-Side Development"}/>
-          <TextBox concept={"RESTful APIs"}/>
-          <TextBox concept={"Database Management"}/>
-          <TextBox concept={"Authentication & Authorization"}/>
-          <TextBox concept={"CRUD Operations"}/>
-          <TextBox concept={"Deployment"}/>
+        <div className="w-full">
+          <h2 className="text-4xl font-semibold py-5 uppercase">Concepts</h2>
+          <div className="flex flex-wrap justify-start gap-3">
+            <TextBox concept={"Responsive Web Design"} />
+            <TextBox concept={"Component-Based Architecture"} />
+            <TextBox concept={"State Management"} />
+            <TextBox concept={"DOM Manipulation"} />
+            <TextBox concept={"API Integration"} />
+            <TextBox concept={"UI/UX Principles"} />
+            <TextBox concept={"Server-Side Development"} />
+            <TextBox concept={"RESTful APIs"} />
+            <TextBox concept={"Database Management"} />
+            <TextBox concept={"Authentication & Authorization"} />
+            <TextBox concept={"CRUD Operations"} />
+            <TextBox concept={"Deployment"} />
+          </div>
         </div>
-      </div>
-      <div className="w-full p-5">
-        <h2 className="text-4xl font-semibold py-5 uppercase">Languages</h2>
-        <div className="flex flex-col justify-start gap-3 md:w-3/4 xs:w-full">
-          <ProgressBar title={'Arabic'} value={99}/>
-          <ProgressBar title={'English'} value={80}/>
-          <ProgressBar title={'German'} value={15}/>
+        <div className="w-full">
+          <h2 className="text-4xl font-semibold py-5 uppercase">Languages</h2>
+          <div className="flex flex-col justify-start gap-3 md:w-3/4 xs:w-full">
+            <ProgressBar title={"Arabic"} value={99} />
+            <ProgressBar title={"English"} value={80} />
+            <ProgressBar title={"German"} value={15} />
+          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
