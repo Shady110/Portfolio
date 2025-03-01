@@ -27,7 +27,7 @@ function Bio() {
             }
           />
           <Stats
-            number={"1+"}
+            number={"1.5+"}
             text={
               <>
                 Years of

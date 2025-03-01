@@ -5,9 +5,12 @@ import HTML from "../assets/html-1.svg";
 import CSS from "../assets/css-3.svg";
 import Bootstrap from "../assets/bootstrap-5-1.svg";
 import Tailwind from "../assets/tailwindcss.svg";
+import antDesign from "../assets/ant-design.svg";
+import MaterialUi from "../assets/material-ui.svg";
 import Laravel from "../assets/laravel-2.svg";
 import Mysql from "../assets/mysql-logo-pure.svg";
 import React from "../assets/react-2.svg";
+import next from "../assets/nextjs-icon.svg";
 import Javascript from "../assets/logo-javascript.svg";
 import Git from "../assets/git-icon.svg";
 import Github from "../assets/github-icon-1.svg";
@@ -41,7 +44,10 @@ function Skills() {
             <ToolBox image={Javascript} title={"JavaScript"} />
             <ToolBox image={Bootstrap} title={"Bootstrap"} />
             <ToolBox image={Tailwind} title={"Tailwind"} />
+            <ToolBox image={antDesign} title={"Ant Design"} />
+            <ToolBox image={MaterialUi} title={"Material UI"} />
             <ToolBox image={React} title={"React.JS"} />
+            <ToolBox image={next} title={"Next.JS"} />
             <ToolBox image={Laravel} title={"Laravel"} />
             <ToolBox image={Mysql} title={"MySQL"} />
           </div>
