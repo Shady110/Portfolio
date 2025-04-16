@@ -25,7 +25,7 @@ function Resume() {
             <WorkBox
               job={"Frontend Developer"}
               comapny={"BLue Ribbon"}
-              start_date={"Nov 2024"}
+              start_date={"Dec 2024"}
               end_date={"now"}
             />
             <WorkBox
